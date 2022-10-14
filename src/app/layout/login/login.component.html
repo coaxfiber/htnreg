@@ -1,0 +1,20 @@
+<div  style="background-color: #eee; height: 100vh">
+  <div class="loginBox"> 
+    <img class="user" src="assets/images/htnlogo.png"
+    height="150px" width="150px">
+
+    <div class="inputBox"> 
+      <input type="submit" name="" value="Sign in with Google" #loginRef>
+      <div *ngIf="isloading">
+        <div class="d-flex justify-content-center" style="color:#fff;">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+        <div style="height: 10px"></div>
+      </div>
+    <div class="text-center">
+        <p style="color: #fff;"><a style="font-weight:100; text-decoration: underline;" href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank">Create Google Account</a></p>
+    </div>
+  </div>
+</div>
